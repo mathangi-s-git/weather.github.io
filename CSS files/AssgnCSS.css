@@ -268,12 +268,12 @@
         display:flex;
         flex-wrap: nowrap;
         justify-content: space-evenly;
-        overflow-x: auto;       
+        overflow-x: auto;    
     }
 
     .wthrcard::-webkit-scrollbar{
         width: 0;
-    } 
+    }
 
     .card{
         border-radius: 10px;
@@ -390,9 +390,9 @@
 
     
     @media only screen and (max-width: 768px) {
-        /* .wthrcard{
+        .wthrcard{
             justify-content: flex-start;
-        } */
+        
 
         .continents{
             grid-template-columns: auto auto;
