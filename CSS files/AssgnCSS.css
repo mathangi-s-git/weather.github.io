@@ -266,13 +266,8 @@
         height: auto;
         box-sizing: border-box;
         display:flex;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         justify-content: space-evenly;
-        overflow-x: auto;    
-    }
-
-    .wthrcard::-webkit-scrollbar{
-        width: 0;
     }
 
     .card{
@@ -392,8 +387,13 @@
     @media only screen and (max-width: 768px) {
         .wthrcard{
             justify-content: flex-start;
+            overflow-x: auto;
+            flex-wrap: nowrap;
          }
-        
+         
+        .wthrcard::-webkit-scrollbar{
+            width: 0;
+         }
 
         .continents{
             grid-template-columns: auto auto;
